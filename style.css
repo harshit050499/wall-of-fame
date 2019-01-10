@@ -1,0 +1,182 @@
+
+  body {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#messages {
+  position: relative;
+  margin: 50px auto;
+  padding: 0;
+  width: 800px;
+  list-style: none; }
+
+#messages li {
+  float: left;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px dashed #c8c7b4; }
+
+#messages li:nth-child(2n) .infos {
+  float: right;
+  margin-left: 20px; }
+
+#messages li:nth-child(2n) .infos a {
+  -webkit-box-shadow: 1px 1px 0 1px rgba(90, 81, 15, 0.2);
+  -moz-box-shadow: 1px 1px 0 1px rgba(90, 81, 15, 0.2);
+  box-shadow: 1px 1px 0 1px rgba(90, 81, 15, 0.2);
+  left: inherit; }
+
+#messages li:nth-child(2n) .content { border-width: 1px 3px 4px 4px; }
+
+#messages li:nth-child(2n) .facebook { right: -10px; }
+
+#messages li:nth-child(2n) .twitter { right: -5%; }
+
+#messages li:nth-child(2n) .github { right: -1%; }
+
+#messages .infos {
+  
+  border-radius: 50%;
+  position: relative;
+  float: left;
+  padding: 3px;
+  width: 130px;
+  height: 130px;
+  border: 5px solid #c8c7b4; }
+
+#messages .infos a {
+  
+  border-radius: 17px;
+  -webkit-box-shadow: -1px 1px 0 1px rgba(90, 81, 15, 0.2);
+  -moz-box-shadow: -1px 1px 0 1px rgba(90, 81, 15, 0.2);
+  box-shadow: -1px 1px 0 1px rgba(90, 81, 15, 0.2);
+  position: absolute;
+  width: 20px;
+  height: 22px;
+  background-color: #d5d2a8;
+  color: #fff;
+  text-decoration: none;
+  text-indent: -10000px;
+  font-size: 11px; }
+
+#messages .infos a:hover {
+  padding: 0 10px 0 18px;
+  width: auto;
+  border: none;
+  text-indent: 0;
+  opacity: 0.95; }
+
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; 
+  border-radius: 50%;
+  margin-right:10px;/* Remove this if you don't want the 3D effect */
+}
+.head
+{
+    background-color: #ff5e3a;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 50%;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 50%;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+.content {
+  
+  border-radius: 10px;
+  position: relative;
+  float: left;
+  margin-left: 225px;
+  margin-top: -200px;
+  padding: 15px 25px;
+  width: 510px;
+  
+  background-color: #ff5e3a;
+ 
+
+}
+.odd .flip-card
+{
+  border:5px solid black;
+}
+.even .flip-card
+{
+ 
+ margin-left: 550px;
+ border:5px solid black;
+}
+.even .content
+{
+  margin-left: -25px;
+  
+}
+
+
+
+.content h3 {
+  font: 23px "Satisfy";
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+.content p {
+  margin: 10px 0 0 0;
+  font-size: 15px;
+  line-height: 1.7em; }
+
+.content p a {
+  text-decoration: none;
+  background-color: #f7f3c5;
+  border-bottom: solid 1px #cfcebe;
+  color: #834202;
+  padding: 1px 4px; }
+
+.content p a:hover { background-color: #f5ec82; }
+
+.content b {
+  display: block;
+  color: #75280c;
+  font: italic normal 17px Georgia; }
